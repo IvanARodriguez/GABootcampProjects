@@ -68,15 +68,16 @@ ul {
     background-color: #ddd;
     color: black;
 }
-.rights {font-family: 'Karla', sans-serif;
+.rights {font-family: 'Karla', sans-serif; 
 text-align: right;
     background-color: orange;
     overflow: hidden;
     position: fixed;
     bottom: 0;
-    width: 15%;
+    width: 100%;
 }    
 .contact {
+	font-family: 'Karla', sans-serif; 
 	font-weight: bolder;
 	color: white;
 	font-size: 20px;
