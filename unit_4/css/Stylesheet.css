@@ -1,8 +1,6 @@
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
 	background-color: lightgrey;
-	background-image: url(https://raw.githubusercontent.com/quimicaproduce/quimicaproduce.github.io/master/unit_3/images/fondo.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
 	text-align: center;
 	font-style: justify;
 	
@@ -45,9 +43,6 @@ h2 {
 
 p {
 	font-family: 'Crimson Text', serif;
-	font-size: 40px;
-	color: #FFCC00;
-	font-weight: 10;
 }
 .juan {
 	border-radius: 5%;
@@ -79,41 +74,48 @@ ul {
   margin: 0; 
   padding: 0;}
 
-.nav {
+header {
 	font-family: 'Karla', sans-serif;
-    background-color: orange;
-    overflow: hidden;
-    position: fixed;
-    bottom: 5px;
-    width: 100%;
+	background-color: orange;
 }
 
-.nav a {
-    float: left;
-    display: block;
+nav a {
+    /* float: left; */
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 25px;
     text-decoration: none;
     font-size: 17px;
 }
-.nav a:hover {
+nav a:hover {
     background-color: #ddd;
     color: black;
-    font-weight: bold;
 }
-.rights {font-family: 'Karla', sans-serif; 
-text-align: right;
-    background-color: orange;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}    
+.rights {font-family: 'Karla', sans-serif;text-align: center;}    
 .contact {
 	font-family: 'Karla', sans-serif; 
 	font-weight: bolder;
 	color: white;
 	font-size: 20px;
 
+}
+#intro {
+	background-image: url(https://raw.githubusercontent.com/quimicaproduce/quimicaproduce.github.io/master/unit_3/images/fondo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:90vh;
+}
+footer {
+    background: orange;
+    padding: 1em;
+}
+
+nav {
+    margin-bottom: 1em;
+}
+
+.boxfiller {
+    font-size: 3em;
+    color: orange;
 }
