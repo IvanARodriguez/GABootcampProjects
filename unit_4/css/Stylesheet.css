@@ -57,7 +57,13 @@ nav {
 			background-color: #474747;
 			color: orange;
 }
-
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 50em;
+    margin-right: 50em;
+}
 
 footer {
 		background: grey;
