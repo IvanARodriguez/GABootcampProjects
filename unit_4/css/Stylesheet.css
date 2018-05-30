@@ -72,9 +72,8 @@ footer {
 					text-align: center;
 					color: white;
 				}
+			
 			.social {
-			}
-			.facebook {
-			background-image: url(images/fb.png);
+			width: 30px;
 			}
 
