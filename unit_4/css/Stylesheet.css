@@ -1,14 +1,13 @@
-*{margin: 0; padding:0; box-sizing:border-box;}
+*{margin: auto; padding:auto; box-sizing:border-box;}
 
 body {
 		background-color: #474747;
 		text-align: center;
-		font-style: justify;
 }
 
 header {
-		background-color: orange;
-
+		background: repeating-linear-gradient(
+			45deg, #FF8503, #FF8503 2px, #FF7805 2px, #FF7805 5px);
 }
 			.logotype{
 					width: 100px;
