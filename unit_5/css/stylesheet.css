@@ -3,10 +3,6 @@ body{
 	background-color: #FFE2B8;
 }
 .wrapper {
-	height: 100%;
-	width: 100%;
-	padding: 10px;
-	margin: 10;
 	border: 1.5px black solid;
 }
 header {
@@ -27,9 +23,6 @@ li {
 	padding: 0 10px;
 }
 nav {
-	display: inline-block;
-	height: auto;
-	width: 100%;
 	font-variant: small-caps;
 	background-color: #E8C66A;
 	border: 1px black solid;
@@ -37,22 +30,31 @@ nav {
 	margin: 10px;
 }
 #one {
-	width: 100%;
+	display: inline-block;;
 	border: 1.5px black solid;
 	background-color: #FFE2B8;
 }
 .picture {
+	position: block;
+	height: auto;
+	width: 25%;
 	float: left;
 	background-color: #FFC675;
 	border: 1px black solid;
+	padding: 10px;
 }
 .description{
+	position: block;
+	height: auto;
+	width: 70%;
 	float: right;
 	background-color: #E89C6C;
 	border: 1px black solid;
+	padding: 10px;
 
 }
 footer{
+	clear: both;
 	background-color: #FF957E;
 	border: 1px black solid;
 }
