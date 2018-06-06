@@ -1,0 +1,38 @@
+
+body{
+	background-color: #FFE2B8;
+}
+.wrapper {
+	border: 1.5px black solid;
+}
+header {
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 15px;
+}
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 15px;
+}
+#one {
+	border: 1.5px black solid;
+	background-color: #FFE2B8;
+}
+.picture {
+	background-color: #FFC675;
+	border: 1px black solid;
+	padding: 10px;
+	margin: 10px;
+}
+.description{
+	background-color: #E89C6C;
+	border: 1px black solid;
+	padding: 10px;
+	margin: 10px;
+
+}
+footer{
+	background-color: #FF957E;
+	border: 1px black solid;
+}
