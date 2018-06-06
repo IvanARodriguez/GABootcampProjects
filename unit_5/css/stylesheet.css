@@ -3,6 +3,10 @@ body{
 	background-color: #FFE2B8;
 }
 .wrapper {
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	margin: 10;
 	border: 1.5px black solid;
 }
 header {
@@ -10,26 +14,42 @@ header {
 	border: 1px black solid;
 	padding: 15px;
 }
+h1 {
+	text-align: center;
+}
+ul {
+	text-align: center;
+	list-style-position: inside;
+	list-style-type: none;
+}
+li {
+	display: inline-block;;
+	padding: 0 10px;
+}
 nav {
+	display: inline-block;
+	height: auto;
+	width: 100%;
+	font-variant: small-caps;
 	background-color: #E8C66A;
 	border: 1px black solid;
-	padding: 15px;
+	padding: 10px;
+	margin: 10px;
 }
 #one {
+	width: 100%;
 	border: 1.5px black solid;
 	background-color: #FFE2B8;
 }
 .picture {
+	float: left;
 	background-color: #FFC675;
 	border: 1px black solid;
-	padding: 10px;
-	margin: 10px;
 }
 .description{
+	float: right;
 	background-color: #E89C6C;
 	border: 1px black solid;
-	padding: 10px;
-	margin: 10px;
 
 }
 footer{
