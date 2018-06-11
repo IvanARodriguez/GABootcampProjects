@@ -1,18 +1,200 @@
 *{margin: auto; padding:auto; box-sizing:border-box;}
 
+body {
+	font-family: 'Frank Ruhl Libre', serif;
+	background-color: black
+}
 header{
-	background-image: url(images/Hero.png);
+	height: 70px;
+	padding: 0px;
+	color: black;
+	background-color: orange;
+	
+}
+h1 {
+	font-family: 'Raleway', sans-serif;
+	color: orange;
+	font-size: 100px;
+}
+h2 {
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 30px;
+	font-size: 40px;
+}
+p {
+	text-decoration: none;
+}
+#topnav nav {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	margin: 20px 0 ;
+	font-size: 20px;
+	float: right;
 
 }
-img{
-
+#topnav nav a{
+	padding: 20px;
+	text-decoration: none;
+	color: black;
 }
-nav{
-
+#topnav a:hover{
+	background-color: black;
+	color: orange;
 }
-nav a{
-
+#topnav a:active{
+	background-color: green;
 }
-nav a:hover{
+footer {
+	color: lightgrey;
+	text-decoration: none;
+	background-color: black;
+	text-align: center;
+	font-size: 16px;
+}
+footer a{
+	text-decoration: none
+	color: lightgrey;}
 
+#hero {
+	background-image: url(https://raw.githubusercontent.com/quimicaproduce/quimicaproduce.github.io/master/unit_6%20option/images/Hero.png);
+	background-size: cover;
+	height: 50vh;
+}
+.slogan {
+	font-size: 30px;
+	margin-right: 90px;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	height: 100%;
+	width: 30%;
+	background-color: rgba(0,0,0,0.70);
+	float: right; 
+	border-radius: 25px;
+}
+.logo {
+	width: 50px;
+	padding: 0;
+	margin:10px;
+}
+.ivan {
+	line-height: 30px;
+	text-align: center;
+	border: 2px black;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	margin: 5px 5px 35px 5px;
+	width: 49%;
+	height: 30em;
+	float: left;
+}
+.juan {
+	line-height: 30px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: lightgrey;
+	color: black;
+	padding: 10px;
+	margin: 5px 5px 35px 5px;
+	width: 49%;
+	height: 30em;
+	float: right;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+#bio {
+	text-align: center;
+	background-color: grey;
+	color: white;
+	margin: 0 10px;
+}
+.juanavatar, .ivanavatar {
+	position: relative;
+	margin-top: -3em;
+	width: 10em;
+	border-radius: 5px;
+	border: 10px orange solid;
+}
+#one {
+	color: black;
+	background-color: lightgrey;
+	margin: 0 10px;
+	height: 40em;
+}
+#left {
+	color: black;
+	background-color: white;
+	float: left;
+	height: 30em;
+	width: 30%;
+	padding: 0px;
+	margin: 2.5em 0 0 5px;
+	border: 3px grey solid;
+	border-radius: 5px;
+	box-shadow: 4px 4px 20px grey;
+}
+#right {
+	font-size: 20px;
+	line-height: 1.5em;
+	float: right;
+	padding: 40px 10px 0 10px;
+	height: 30em;
+	width: 68%;
+}
+#right h2 {
+	color: orange;
+	text-shadow: 2px 2px 5px grey;
+}
+.social {
+	height: 50px;
+	margin: 5px;
+}
+.mediaheader {
+	font-size: 20px;
+	color: grey;
+}
+.mic {
+	height: 120px;
+	float: left;
+	padding: 0 10px 0 0;
+}
+hr {
+	margin: 10px 35%;
+}
+.boxhead {
+	padding: 0;
+	width: 100%;
+	height: 5em;
+}
+.aside { padding: 10px; }
+.aside h2{color: orange;}
+
+#footernav nav{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	text-decoration: none;
+	height: 3em;
+	font-size: 20px;
+	padding: 10px;
+	float: none;
+}
+#footernav nav a{
+	margin: px;
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+}
+#footernav a:hover{
+	background-color: ;
+	color: orange;
+}
+#footernav a:active{
+	background-color: green;
 }

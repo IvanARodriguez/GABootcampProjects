@@ -25,6 +25,9 @@ h1 {
 		font-size: 5em;
 		color: white;
 }
+h2 {
+	font-size: 40px;
+}
 
 p {
 		font-family: 'Source Serif Pro', serif;
@@ -40,21 +43,18 @@ nav {
 		font-family: 'Hind Siliguri', sans-serif;
 		margin-bottom: 5px;
 }
-
-		nav a {
-
-			font-family: 'Hind Siliguri', sans-serif;
-			display: inline-block;
-			color: white;
-			text-align: center;
-			padding: 10px 5px;
-			text-decoration: none;
-			font-size: 14px;
-
-		}
-		nav a:hover {
-			background-color: #474747;
-			color: orange;
+nav a {
+		font-family: 'Hind Siliguri', sans-serif;
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 10px 5px;
+		text-decoration: none;
+		font-size: 14px;
+}
+nav a:hover {
+		background-color: #474747;
+		color: orange;
 }
 hr { 
     display: block;
