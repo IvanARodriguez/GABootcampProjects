@@ -19,13 +19,13 @@ h1 {
 }
 h2 {
 	font-family: 'Raleway', sans-serif;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	font-size: 32px;
 }
 p {
 	text-decoration: none;
 }
-
+li {text-decoration: none;}
 
 #topnav nav {
 	font-family: 'Raleway', sans-serif;
@@ -66,17 +66,24 @@ footer a{
 }
 .slogan {
 	display: block;
-	line-height: center;
-	margin: 0 5em;
-	padding: auto;
 	color: white;
 	text-align: center;
-	height: 70%;
+	height: 90%;
 	width: 30%;
 	background-color: rgba(0,0,0,0.70);
 	float: right; 
 	border-radius: 25px;
 }
+.slogan h1 {
+	margin: .7em;
+	font-size: 5em;
+}
+.slogan h2 {
+	font-size: 2em;
+	margin: 0 2em;
+
+}
+
 .logo {
 	width: 50px;
 	padding: 5px;
@@ -84,27 +91,26 @@ footer a{
 }
 .ivan {
 	line-height: 30px;
+	display: block;
 	text-align: center;
-	border: 2px black;
 	border-radius: 10px;
 	background-color: white;
 	color: black;
 	width: 49%;
-	height: 30em;
 	float: left;
 	padding: 10px;
-	margin: .5em .5em 3.5em .5em;
+	margin: .5em;
 }
 .juan {
 	line-height: 30px;
+	display: block;
 	text-align: center;
 	border-radius: 10px;
 	background-color: lightgrey;
 	color: black;
 	padding: 10px;
-	margin: .5em .5em 3.5em .5em;
 	width: 49%;
-	height: 30em;
+	margin: .5em;
 	float: right;
 }
 .clearfix:after {
@@ -116,13 +122,14 @@ footer a{
     height: 0;
 }
 #bio {
+	width: 100%;
 	text-align: center;
 	background-color: grey;
 	color: white;
 }
 .juanavatar, .ivanavatar {
 	position: relative;
-	margin-top: -3em;
+	margin-top: -2em;
 	width: 150px;
 	border-radius: 5px;
 	border: 10px orange solid;
@@ -212,27 +219,31 @@ hr {
 
 @media only screen and (max-width: 1620px) {
 	h1, h2, nav {
-		display: block;
 		line-height: center;
 	}
-	h1{
-		font-size: 2em;
+	#hero {
+		height: 60vh;
 	}
+
 	.slogan h2 {
 		display: block;
 		font-size: 1em;
 		margin: 1em ;
 	}
 	.slogan {
+		height: 100%;
+		width: 25em;
 		float: none;
-		line-height: center;
+		line-height: 1.5em;
 		text-align: center;
-		height: 30%;
-		width: 70%;
+		margin-left: 35%;
 		font-size: 1.4em;
 	}
+	.slogan h1 {
+		font-size: 2em;
+		line-height: 1.5em;
+	}
 	nav a {
-		margin: 0 1em 1em;
 	}
 	img {
 		width: auto;
@@ -253,14 +264,161 @@ hr {
 	}
 	
 	.ivan, .juan {
+		width: 48%;
+		margin: 0;
+		height: 70vh;
+	}
+	#one {
 		width: 100%;
+		height: 90vh;
+	}
+	#left {
+	height: 80%;
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	h1, h2, nav {
+		margin: 0;
+		line-height: center;
+	}
+	#hero {
+		height: 40vh;
+		width: 100%;
+	}
 
+	.slogan h2 {
+		display: block;
+		font-size: 1em;
+		margin: 1em ;
+	}
+	.slogan {
+		float: none;
+		line-height: 1.8em;
+		text-align: center;
+		width: 70%;
+		margin-left: 35%;
+		font-size: 1.4em;
+	}
+	.slogan h1 {
+		font-size: 2em;
+	}
+	nav a {
+	}
+	img {
+		width: auto;
+	}
+	section, div {
+		width: 100%;
+		padding: .6em;
+	}
+	
+	.ivan, .juan {
+		font-size: 16px;
+		float: none;
+		text-align: center;
+		width: 98%;
+		margin: 0 0 10px;
+		height: 60vh;
+	}
+	.juanavatar, .ivanavatar {
+		position: inline-block;
+		margin: .7em;
+		width: 90px;
+		border-radius: 5px;
+		border: 2px orange solid;}
 
+	#one {
+		margin: 0 10px;
+		height: 115vh;
+		font-size: 14px;}
 
+	#left {
+		float: none;
+		height: 50%;
+		width: 98%;
+		margin: auto;
+	}
+	#right {
+		float: none;
+		margin: auto;
+		width: 100%;
+		font-size: 14px;
+	}
+}
 
+@media only screen and (max-width: 400px) {
+	h1, h2, nav {
+		margin: 0;
+		line-height: center;
+	}
+	#hero {
+		height: 40vh;
+		width: 100%;
+	}
+
+	.slogan h2 {
+		line-height: 30px;
+		display: block;
+		font-size: 12px;
+		margin: 5px;
+	}
+	.slogan {
+		position: block;
+		float: none;
+		line-height: 1.8em;
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		font-size: 1.4em;
+	}
+	.slogan h1 {
+		font-size: 24px;
+	}
+	nav a {
+		font-size: 10px;
+	}
+	img {
+		width: auto;
+	}
+	#bio {
+		height: 200vh;
+	}
+	.ivan, .juan {
+		text-align: center;
+		line-height: 20px;
+		font-size: 16px;
+		float: none;
+		width: 98%;
+		margin: 0 0 10px;
+		height: 98vh;
+	}
+	.juanavatar, .ivanavatar {
+		position: inline-block;
+		margin: .7em;
+		width: 90px;
+		border-radius: 5px;
+		border: 2px orange solid;}
+
+	#one {
+		margin: 0 10px;
+		height: 200vh;
+		font-size: 14px;}
+
+	#left {
+		float: none;
+		height: 40%;
+		width: 98%;
+		margin: auto;
+	}
+	#right {
+		float: none;
+		margin: auto;
+		width: 100%;
+		font-size: 14px;
+	}
+	
+}
 
 
 
