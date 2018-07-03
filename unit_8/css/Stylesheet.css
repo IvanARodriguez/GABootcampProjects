@@ -1,424 +1,261 @@
-*{margin: auto; padding:auto; box-sizing:border-box;}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
 
 body {
-	font-family: 'Frank Ruhl Libre', serif;
-	background-color: black;
-	font-size: 16px;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
-header{
-	height: 70px;
-	padding: 0px;
-	color: black;
-	background-color: orange;
-	
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1.5px;
 }
-h1 {
-	font-family: 'Raleway', sans-serif;
-	color: orange;
-	font-size: 4em;
+.section__titulo {
+  text-align: center;
+  font-size: 40px;
+  color: #FBA919;
 }
-h2 {
-	font-family: 'Raleway', sans-serif;
-	padding-bottom: 20px;
-	font-size: 32px;
+.wholebox {
+  margin: auto;
+  width: 99%;
 }
-p {
-	text-decoration: none;
+/*-------------------Header Style-------------------*/
+.logo{
+	height: 40px;
 }
-li {text-decoration: none;}
-
-#topnav nav {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-	margin: 20px 0 ;
-	font-size: 20px;
-	float: right;
-
+.header {
+  background: rgba(0, 0, 0, 0.6);
+  height: 60px;
 }
-#topnav nav a{
-	padding: 20px;
-	text-decoration: none;
-	color: black;
+.header .wholebox {
+  display: flex;
+  justify-content: space-between;
 }
-#topnav a:hover{
-	background-color: black;
-	color: orange;
+.logo, .icon-menu {
+  margin: 5px;
+  color: #fff;
 }
-#topnav a:active{
-	background-color: green;
+.icon-menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: #FBA919;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
 }
-footer {
-	color: lightgrey;
-	text-decoration: none;
-	background-color: black;
-	text-align: center;
-	font-size: 16px;
+/*------------------Menu Style------------------*/
+.nav {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.4s;
 }
-footer a{
-	text-decoration: none
-	color: lightgrey;}
-
-#hero {
-	background-image: url(https://raw.githubusercontent.com/quimicaproduce/quimicaproduce.github.io/master/unit_6%20option/images/Hero.png);
-	background-size: cover;
-	height: 60vh;
-	width: 100%;
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.slogan {
-	display: block;
-	color: white;
-	text-align: center;
-	height: 90%;
-	width: 30%;
-	background-color: rgba(0,0,0,0.70);
-	float: right; 
-	border-radius: 25px;
+.menu__link {
+  display: block;
+  padding: 15px;
+  background: #FBA919;
+  text-decoration: none;
+  color: #fff;
 }
-.slogan h1 {
-	margin: .7em;
-	font-size: 5em;
+.menu__link:hover, .select {
+  background: white;
+  color: #FBA919;
 }
-.slogan h2 {
-	font-size: 2em;
-	margin: 0 2em;
-
+.mostrar {
+  left: 0;
 }
 
-.logo {
-	width: 50px;
-	padding: 5px;
-	margin: 5px;
+/*--------------Banner Style--------------*/
+
+.banner {
+  margin-top: -60px;
+  position: relative;
+  z-index: -1000;
+  margin-bottom: 20px;
 }
-.ivan {
-	line-height: 30px;
-	display: block;
-	text-align: center;
-	border-radius: 10px;
-	background-color: white;
-	color: black;
-	width: 49%;
-	float: left;
-	padding: 10px;
-	margin: .5em;
+
+.banner .wholebox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: #fff;
+  text-align: center;
 }
-.juan {
-	line-height: 30px;
-	display: block;
-	text-align: center;
-	border-radius: 10px;
-	background-color: lightgrey;
-	color: black;
-	padding: 10px;
-	width: 49%;
-	margin: .5em;
-	float: right;
+
+.banner__txt {
+  display: none;
 }
-.clearfix:after {
-    visibility: hidden;
+
+/*-----------------Estilos de info-----------------*/
+.info__column {
+  background: #FBA919;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+/*-----------------Estilos de cursos-----------------*/
+.cursos__columna {
+  position: relative;
+  margin-bottom: 30px;
+}
+.cursos__descripcion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  width: 60%;
+  height: 100%;
+  padding: 5px;
+}
+.cursos__titulo {
+  font-size: 25px;
+  margin: 5px 0;
+}
+.cursos__img {
+  width: 100%;
+}
+/*------------------Estilos responsive------------------*/
+
+@media(min-width:480px) {
+  .logo {
+    font-size: 40px;
+  }
+  .banner__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .banner__txt {
     display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+    font-size: 18px;
+    margin: 7px 0;
+  }
+  .info, .cursos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -90px;
+  }
+  .info__columna {
+    width: 32%;
+  }
+  .info__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .section__titulo {
+    width: 100%;
+  }
+  .cursos {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .cursos__columna {
+    width: 49%;
+  }
+  .footer .social [class^="icon-"] {
+    margin: 0 10px;
+  }
 }
-#bio {
-	width: 100%;
-	text-align: center;
-	background-color: grey;
-	color: white;
-}
-.juanavatar, .ivanavatar {
-	position: relative;
-	margin-top: -2em;
-	width: 150px;
-	border-radius: 5px;
-	border: 10px orange solid;
-}
-#one {
-	color: black;
-	background-color: lightgrey;
-	margin: 0 10px;
-	height: 40em;
-}
-#left {
-	color: black;
-	background-color: white;
-	float: left;
-	height: 30em;
-	width: 30%;
-	padding: 0px;
-	margin: 2.5em 0 0 5px;
-	border: 3px grey solid;
-	border-radius: 5px;
-	box-shadow: 4px 4px 20px grey;
-}
-#right {
-	font-size: 20px;
-	line-height: 1.5em;
-	float: right;
-	padding: 40px 10px 0 10px;
-	height: 30em;
-	width: 68%;
-}
-#right h2 {
-	color: orange;
-	text-shadow: 2px 2px 5px grey;
-}
-.social {
-	height: 50px;
-	margin: 5px;
-}
-.mediaheader {
-	font-size: 20px;
-	color: grey;
+@media(min-width:768px) {  
+  .banner__titulo {
+    font-size: 50px;
+  }
+  .cursos__titulo {
+    font-size: 40px;
+  }
 }
 
-hr {
-	margin: 10px 35%;
-}
-.boxhead {
-	padding: 0;
-	width: 100%;
-	height: 5em;
-}
-
-.aside { 
-	padding: 10px;
-	display: block;
-	height: 70%; 
-}
-
-.aside h2 {
-	color: orange;
-}
-
-#footernav nav{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-	text-decoration: none;
-	height: 3em;
-	font-size: 20px;
-	padding: 10px;
-	float: none;
-}
-#footernav nav a{
-	margin: px;
-	padding: 20px;
-	text-decoration: none;
-	color: white;
-}
-#footernav a:hover{
-	background-color: ;
-	color: orange;
-}
-#footernav a:active{
-	background-color: green;
-}
-
-
-
-@media only screen and (max-width: 1620px) {
-	h1, h2, nav {
-		line-height: center;
+@media(min-width:1024px) {
+	.banner {
+		font-size: 3em;
 	}
-	#hero {
-		height: 60vh;
-	}
-
-	.slogan h2 {
-		display: block;
-		font-size: 1em;
-		margin: 1em ;
-	}
-	.slogan {
-		height: 100%;
-		width: 25em;
-		float: none;
-		line-height: 1.5em;
-		text-align: center;
-		margin-left: 35%;
-		font-size: 1.4em;
-	}
-	.slogan h1 {
-		font-size: 2em;
-		line-height: 1.5em;
-	}
-	nav a {
-	}
-	img {
-		width: auto;
-	}
-	section, div {
-		width: 100%;
-		padding: .6em;
-	}
-	p, ul {
-		margin: 1.8em .6em 0;
-	}
-	li {
-		width: 80%;
-		outline-width: .5em;
-		padding: .5em;
-		height: 2em;
-		line-height: 2em;
-	}
-	
-	.ivan, .juan {
-		width: 48%;
-		margin: 0;
-		height: 70vh;
-	}
-	#one {
-		width: 100%;
-		height: 90vh;
-	}
-	#left {
-	height: 80%;
-	}
+  .wholebox {
+    width: 1000px;
+  }
+  .section__titulo {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+  .nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .menu__link {
+    background: none;
+    font-size: 20px;
+  }
+  .select {
+    color: #fff;
+    background: #FBA919;
+  }
+  .banner__titulo {
+    font-size: 60px;
+  }
+  .banner__txt {
+    font-size: 25px;
+  }
+  .info {
+    margin-top: -120px;
+  }
+  .info__columna {
+    padding: 30px;
+  }
+  .info__titulo {
+    font-size: 40px;
+    text-align: center;
+  }
+  .cursos__descripcion {
+    padding: 20px;
+  }
+  .cursos__titulo {
+    font-size: 50px;
+  }
+  .cursos__txt {
+    font-size: 20px;
+  }
+  .cursos__columna{
+  	background-size: cover;
+  }
 }
 
-@media only screen and (max-width: 800px) {
-	h1, h2, nav {
-		margin: 0;
-		line-height: center;
-	}
-	#hero {
-		height: 40vh;
-		width: 100%;
-	}
-
-	.slogan h2 {
-		display: block;
-		font-size: 1em;
-		margin: 1em ;
-	}
-	.slogan {
-		float: none;
-		line-height: 1.8em;
-		text-align: center;
-		width: 70%;
-		margin-left: 35%;
-		font-size: 1.4em;
-	}
-	.slogan h1 {
-		font-size: 2em;
-	}
-	nav a {
-	}
-	img {
-		width: auto;
-	}
-	section, div {
-		width: 100%;
-		padding: .6em;
-	}
-	
-	.ivan, .juan {
-		font-size: 16px;
-		float: none;
-		text-align: center;
-		width: 98%;
-		margin: 0 0 10px;
-		height: 60vh;
-	}
-	.juanavatar, .ivanavatar {
-		position: inline-block;
-		margin: .7em;
-		width: 90px;
-		border-radius: 5px;
-		border: 2px orange solid;}
-
-	#one {
-		margin: 0 10px;
-		height: 115vh;
-		font-size: 14px;}
-
-	#left {
-		float: none;
-		height: 50%;
-		width: 98%;
-		margin: auto;
-	}
-	#right {
-		float: none;
-		margin: auto;
-		width: 100%;
-		font-size: 14px;
-	}
+@media(min-width:1280px) {
+  .wholebox {
+    width: 1200px;
+  }
+  .logo {
+    font-size: 60px;
+  }
+  .banner .contenedor {
+    top: 40%;
+  }
+  .info {
+    margin-top: -220px;
+  }
 }
-
-@media only screen and (max-width: 400px) {
-	h1, h2, nav {
-		margin: 0;
-		line-height: center;
-	}
-	#hero {
-		height: 40vh;
-		width: 100%;
-	}
-
-	.slogan h2 {
-		line-height: 30px;
-		display: block;
-		font-size: 12px;
-		margin: 5px;
-	}
-	.slogan {
-		position: block;
-		float: none;
-		line-height: 1.8em;
-		text-align: center;
-		width: 100%;
-		margin: 0;
-		font-size: 1.4em;
-	}
-	.slogan h1 {
-		font-size: 24px;
-	}
-	nav a {
-		font-size: 10px;
-	}
-	img {
-		width: auto;
-	}
-	#bio {
-		height: 200vh;
-	}
-	.ivan, .juan {
-		text-align: center;
-		line-height: 20px;
-		font-size: 16px;
-		float: none;
-		width: 98%;
-		margin: 0 0 10px;
-		height: 98vh;
-	}
-	.juanavatar, .ivanavatar {
-		position: inline-block;
-		margin: .7em;
-		width: 90px;
-		border-radius: 5px;
-		border: 2px orange solid;}
-
-	#one {
-		margin: 0 10px;
-		height: 200vh;
-		font-size: 14px;}
-
-	#left {
-		float: none;
-		height: 40%;
-		width: 98%;
-		margin: auto;
-	}
-	#right {
-		float: none;
-		margin: auto;
-		width: 100%;
-		font-size: 14px;
-	}
-	
-}
-
-
 
