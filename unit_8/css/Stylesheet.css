@@ -12,10 +12,17 @@ img {
 body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 1.5px;
+	font-size: 16px;
+}
+hr{
+	width: 95%;
+}
+
 }
 .section__titulo {
   text-align: center;
@@ -23,9 +30,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #FBA919;
 }
 #banimage {
-	background-image: url(https://raw.githubusercontent.com/quimicaproduce/quimicaproduce.github.io/master/unit_8/images/studio.jpg);
+	background-image: url(https://raw.githubusercontent.com/quimicaproduce/quimicaproduce.github.io/master/unit_8/images/studio.jpeg);
 	background-size: cover;
-	height: 50vh;
+	height: 90vh;
 }
 .wholebox {
   margin: auto;
@@ -36,8 +43,8 @@ h1, h2, h3, h4, h5, h6 {
 	height: 40px;
 }
 .header {
-  background: rgba(0, 0, 0, 0.6);
-  height: 60px;
+  background: linear-gradient(black, #2B2B2B);
+  height: 50px;
 }
 .header .wholebox {
   display: flex;
@@ -51,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 40px;
   height: 40px;
+  padding: 2.5px 0;
   font-size: 30px;
   background: #FBA919;
   text-align: center;
@@ -90,12 +98,24 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------Banner Style--------------*/
 
 .banner {
+	height: 40em;
+	background: black;
   margin-top: -60px;
   position: relative;
   z-index: -1000;
   margin-bottom: 20px;
 }
+.banner_txt{
+	letter-spacing: 2px;
+	font-size: 1.5em;
+	text-shadow: 2px 2px #000;
+}
+.banner_title{
+	padding-top: 15px;
+	font-size: 2.4em;
+	text-shadow: 2px 2px #000;
 
+}
 .banner .wholebox {
   position: absolute;
   top: 50%;
@@ -106,20 +126,71 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.banner__txt {
-  display: none;
-}
 
-/*-----------------Estilos de info-----------------*/
+/*-----------------Platforms we work-----------------*/
+.platsupport2, .platforms2{
+	background-color: black;
+	padding: 20px;
+}
+.platforms2 h2{
+	color: white;
+}
+#boxshadow img {
+	width: 100%;
+	border: 1px solid #8a4419;
+
+}
+.more-features{
+	display: none;
+}
+.plat_title, .morefeatures{
+	height: 30%;
+	font-size: 2em;
+	color: rgb(0, 112, 106);
+}
+.plat_title{
+	width: 100%;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+}
+.platforms {
+	display: flex;
+	height: 100%;
+	padding: 10px;
+	color: lightgrey;
+	background: white;
+}
+.info_img{
+	margin-bottom: 20px;
+	float: left;
+	height: 50%;
+	width: 100%;
+}
+.importance{
+	color: grey;
+	font-size: 0.8em;
+}
 .info__column {
   background: #FBA919;
   color: #fff;
   padding: 15px;
   margin-bottom: 30px;
 }
-
+.info_titulo{
+	font-size: 1.5em;
+	text-align: center;
+	color: black;
+}
+.info_txt{
+	color: rgb(75, 75, 75);
+}
 /*-----------------Estilos de cursos-----------------*/
+.artist{
+	color: orange
+}
 .cursos__columna {
+	line-height: 1.5em;
+	height: 50vh;
   position: relative;
   margin-bottom: 30px;
 }
@@ -128,17 +199,66 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   color: #fff;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.8);
   width: 60%;
   height: 100%;
   padding: 5px;
 }
-.cursos__titulo {
+.projects{
   font-size: 25px;
   margin: 5px 0;
+  line-height: 30px;
 }
 .cursos__img {
   width: 100%;
+}
+/*------------------Footer Styles-----------------------*/
+.footer{
+	background: linear-gradient(black, #2B2B2B);
+	padding: 1.8em 0 10px 0;
+	margin: 0px;
+}
+#socialnav {
+	font-size: 2em;
+	text-align: center;
+	display: flex;
+	display: block;
+	text-decoration: none;
+	background: black;
+}
+#socialnav nav a{
+	margin: 5px;
+	margin: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.mediaheader{
+	margin: 0;
+	width: 100%;
+	color: grey;
+	font-size: 1.4em;
+	text-align: center;
+}
+.footernav{
+	position: flex;
+  width: 100%;
+}
+.footer_item{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	padding: 15px;
+	margin: auto;}
+.footer_item:hover, .select{
+	color: orange;
+	background: black;}
+.rights, .rights a{
+	color: grey;
+	text-decoration: none;
+	text-align: center;
 }
 /*------------------Estilos responsive------------------*/
 
@@ -155,13 +275,29 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     margin: 7px 0;
   }
-  .info, .cursos {
-    display: flex;
+  .platsupport2, .platforms2{
+  	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+  .platforms, .platsupport{
+  	height: 100%;
+  	width: 100%;
     justify-content: space-between;
-    margin-top: -90px;
   }
   .info__columna {
     width: 32%;
+  }
+  .info_img {
+  	display: flex;
+  	height: 100%;
+  	margin-right: 3em;
+  	box-shadow: 5px 5px 50px 5px black;
+  }
+   .more-features{
+  	display: flex;
+  	color: grey;
+  	color: rgb(75, 75, 75);
   }
   .info__titulo {
     font-size: 30px;
@@ -170,7 +306,14 @@ h1, h2, h3, h4, h5, h6 {
   .section__titulo {
     width: 100%;
   }
-  .cursos {
+  .plat_title{
+  	display: inline-block;
+  }
+  .artwork {
+  	height: 20%;
+  	width: 100%;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 0;
   }
@@ -181,55 +324,75 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 10px;
   }
 }
-@media(min-width:768px) {  
-  .banner__titulo {
-    font-size: 50px;
+@media(min-width:768px) {
+.platforms, .platforms2{
+	font-size: 1.9em;
+} 
+  .banner_title {
+    font-size: 1.8em;
   }
-  .cursos__titulo {
-    font-size: 40px;
+  .banner_txt{
+  	font-size: 0.9em;
+  }
+  .more-features{
+  	display: flex;
+  }
+  .plat_title {
+    font-size: 3em;
+  }
+  .importance{
+  	font-size: 1em;
   }
 }
 
 @media(min-width:1024px) {
-	.banner {
-		font-size: 3em;
+	.info_img{
+		width: 45%;
 	}
-  .wholebox {
+.banner {
+		font-size: 3em;
+		text-shadow: 4px 4px #000;
+	}
+ .wholebox {
     width: 1000px;
   }
-  .section__titulo {
+ .info_titulo {
     font-size: 50px;
     margin: 30px 0;
   }
-  .nav {
+ .nav {
     position: static;
     width: auto;
   }
-  .menu {
+ .menu {
     display: flex;
   }
-  .icon-menu {
+ .icon-menu {
     display: none;
   }
   .menu__link {
     background: none;
     font-size: 20px;
   }
-  .select {
+ .select {
     color: #fff;
     background: #FBA919;
   }
-  .banner__titulo {
+ .banner__titulo {
     font-size: 60px;
   }
-  .banner__txt {
+ .banner__txt {
     font-size: 25px;
   }
-  .info {
-    margin-top: -120px;
+ .platforms {
+    height: 90vh;
   }
-  .info__columna {
+ .info__column {
+  	width: 100%;
     padding: 30px;
+  }
+  .info_img{
+  	height: 500px;
   }
   .info__titulo {
     font-size: 40px;
@@ -259,8 +422,8 @@ h1, h2, h3, h4, h5, h6 {
   .banner .contenedor {
     top: 40%;
   }
-  .info {
-    margin-top: -220px;
+  .platforms {
+    margin: auto;
   }
 }
 
